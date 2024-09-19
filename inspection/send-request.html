@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>承認依頼送信</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>社内検査実施の承認依頼を送信</h1>
+    </header>
+    <section class="request-section">
+      <form>
+        <label for="inspectionPlace">点検場所:</label>
+        <input
+          type="text"
+          id="inspectionPlace"
+          name="inspectionPlace"
+          placeholder="例: 第1倉庫"
+        />
+
+        <label for="inspectionItem">点検項目:</label>
+        <input
+          type="text"
+          id="inspectionItem"
+          name="inspectionItem"
+          placeholder="例: 防火扉点検"
+        />
+
+        <button type="submit">承認依頼を送信</button>
+      </form>
+    </section>
+    <footer>
+      <a href="user-dashboard.html">ダッシュボードに戻る</a>
+    </footer>
+  </body>
+</html>
