@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>検査実施詳細</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="inspection-detail-container">
+      <h1>検査実施詳細</h1>
+      <form
+        onsubmit="event.preventDefault(); location.href='inspection_list_admin.html';"
+      >
+        <label for="approval-status">承認状況:</label>
+        <select id="approval-status" name="approval-status">
+          <option value="approved">承認</option>
+          <option value="rejected">却下</option>
+        </select>
+
+        <button type="submit">承認を送信</button>
+      </form>
+      <div class="documents-section">
+        <h2>関連書類</h2>
+        <ul>
+          <li><a href="#">維持補修工事書</a></li>
+          <li><a href="#">点検報告書</a></li>
+          <li><a href="#">打ち合わせ簿</a></li>
+          <li><a href="#">材料検査</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
