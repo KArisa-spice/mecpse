@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>現場社内チェックリスト</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>現場社内チェックリスト</h1>
+      <nav class="document-buttons">
+        <button onclick="openDocument('維持補修工事書')">維持補修工事書</button>
+        <button onclick="openDocument('点検報告書')">点検報告書</button>
+        <button onclick="openDocument('打ち合わせ簿')">打ち合わせ簿</button>
+        <button onclick="openDocument('材料検査')">材料検査</button>
+        <button onclick="openDocument('月間予定表')">月間予定表</button>
+        <button onclick="openDocument('点検履歴台帳')">点検履歴台帳</button>
+      </nav>
+    </header>
+
+    <main>
+      <table class="checklist">
+        <thead>
+          <tr>
+            <th>チェック項目</th>
+            <th>チェック1</th>
+            <th>チェック2</th>
+            <th>チェック3</th>
+            <th>チェック4</th>
+            <th>チェック5</th>
+            <th>記事</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>項目1</td>
+            <td><input type="checkbox" /></td>
+            <td><input type="checkbox" /></td>
+            <td><input type="checkbox" /></td>
+            <td><input type="checkbox" /></td>
+            <td><input type="checkbox" /></td>
+            <td><textarea rows="1"></textarea></td>
+          </tr>
+          <tr>
+            <td>項目2</td>
+            <td><input type="checkbox" /></td>
+            <td><input type="checkbox" /></td>
+            <td><input type="checkbox" /></td>
+            <td><input type="checkbox" /></td>
+            <td><input type="checkbox" /></td>
+            <td><textarea rows="1"></textarea></td>
+          </tr>
+          <!-- 他の項目も同様に追加 -->
+        </tbody>
+      </table>
+    </main>
+
+    <script>
+      function openDocument(docName) {
+        // 別タブで書類を開く
+        window.open("path/to/" + docName + ".pdf", "_blank");
+      }
+    </script>
+  </body>
+</html>

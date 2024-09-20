@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>担当ユーザー - 検査一覧</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="inspection-list-container">
+      <h1>現場社内検査実施一覧</h1>
+      <table class="inspection-table">
+        <thead>
+          <tr>
+            <th>点検場所</th>
+            <th>点検項目</th>
+            <th>承認状況</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>第1現場</td>
+            <td>点検A</td>
+            <td>未承認</td>
+          </tr>
+          <tr>
+            <td>第2現場</td>
+            <td>点検B</td>
+            <td>承認済み</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- 承認依頼画面に遷移するボタン -->
+      <button type="button" onclick="location.href='approval_request.html'">
+        承認依頼を送信
+      </button>
+    </div>
+  </body>
+</html>
